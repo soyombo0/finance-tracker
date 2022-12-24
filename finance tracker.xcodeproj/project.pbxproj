@@ -10,10 +10,10 @@
 		3BE9E25B29572C6800ECBD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9E25A29572C6800ECBD30 /* AppDelegate.swift */; };
 		3BE9E25D29572C6800ECBD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9E25C29572C6800ECBD30 /* SceneDelegate.swift */; };
 		3BE9E25F29572C6800ECBD30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9E25E29572C6800ECBD30 /* ViewController.swift */; };
-		3BE9E26229572C6800ECBD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE9E26029572C6800ECBD30 /* Main.storyboard */; };
 		3BE9E26529572C6800ECBD30 /* finance_tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9E26329572C6800ECBD30 /* finance_tracker.xcdatamodeld */; };
 		3BE9E26729572C6900ECBD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE9E26629572C6900ECBD30 /* Assets.xcassets */; };
 		3BE9E26A29572C6900ECBD30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE9E26829572C6900ECBD30 /* LaunchScreen.storyboard */; };
+		3BE9E27629572E2600ECBD30 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE9E27529572E2600ECBD30 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		3BE9E25A29572C6800ECBD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BE9E25C29572C6800ECBD30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BE9E25E29572C6800ECBD30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BE9E26129572C6800ECBD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BE9E26429572C6800ECBD30 /* finance_tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = finance_tracker.xcdatamodel; sourceTree = "<group>"; };
 		3BE9E26629572C6900ECBD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE9E26929572C6900ECBD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE9E26B29572C6900ECBD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE9E27529572E2600ECBD30 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,48 @@
 		3BE9E25929572C6800ECBD30 /* finance tracker */ = {
 			isa = PBXGroup;
 			children = (
-				3BE9E25A29572C6800ECBD30 /* AppDelegate.swift */,
-				3BE9E25C29572C6800ECBD30 /* SceneDelegate.swift */,
-				3BE9E25E29572C6800ECBD30 /* ViewController.swift */,
-				3BE9E26029572C6800ECBD30 /* Main.storyboard */,
+				3BE9E27429572DE200ECBD30 /* Presenters */,
+				3BE9E27329572DDB00ECBD30 /* Views */,
+				3BE9E27229572DD500ECBD30 /* Models */,
+				3BE9E27129572DC500ECBD30 /* App */,
 				3BE9E26629572C6900ECBD30 /* Assets.xcassets */,
 				3BE9E26829572C6900ECBD30 /* LaunchScreen.storyboard */,
 				3BE9E26B29572C6900ECBD30 /* Info.plist */,
 				3BE9E26329572C6800ECBD30 /* finance_tracker.xcdatamodeld */,
 			);
 			path = "finance tracker";
+			sourceTree = "<group>";
+		};
+		3BE9E27129572DC500ECBD30 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9E25A29572C6800ECBD30 /* AppDelegate.swift */,
+				3BE9E25C29572C6800ECBD30 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3BE9E27229572DD500ECBD30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9E27529572E2600ECBD30 /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BE9E27329572DDB00ECBD30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BE9E25E29572C6800ECBD30 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BE9E27429572DE200ECBD30 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +162,6 @@
 			files = (
 				3BE9E26A29572C6900ECBD30 /* LaunchScreen.storyboard in Resources */,
 				3BE9E26729572C6900ECBD30 /* Assets.xcassets in Resources */,
-				3BE9E26229572C6800ECBD30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +175,7 @@
 				3BE9E25F29572C6800ECBD30 /* ViewController.swift in Sources */,
 				3BE9E25B29572C6800ECBD30 /* AppDelegate.swift in Sources */,
 				3BE9E25D29572C6800ECBD30 /* SceneDelegate.swift in Sources */,
+				3BE9E27629572E2600ECBD30 /* Coin.swift in Sources */,
 				3BE9E26529572C6800ECBD30 /* finance_tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BE9E26029572C6800ECBD30 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BE9E26129572C6800ECBD30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BE9E26829572C6900ECBD30 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,9 +320,8 @@
 				INFOPLIST_FILE = "finance tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +329,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "soyombo.finance-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,9 +350,8 @@
 				INFOPLIST_FILE = "finance tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +359,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "soyombo.finance-tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
